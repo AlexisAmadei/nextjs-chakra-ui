@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Web App Template
+
+A modern, production-ready template for quickly setting up web applications with a powerful tech stack.
+
+## Features
+
+- ⚡ **Next.js 16** - React framework with App Router
+- 🎨 **Chakra UI v3** - Modern, accessible component library
+- 🎭 **Tailwind CSS v4** - Utility-first CSS framework
+- 🌗 **Dark Mode** - Built-in theme switching with `next-themes`
+- 📘 **TypeScript** - Type-safe development
+- 🎯 **ESLint** - Code quality and consistency
+- 🔤 **Geist Font** - Optimized font loading
+- 🎪 **Lucide Icons** - Beautiful icon library
+- 📦 **pnpm** - Fast, disk space efficient package manager
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the template:**
+   ```bash
+   git clone <repository-url>
+   cd template-nextjs-chakra-ui-tailwindcss
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
+
+## Project Structure
+
+```
+├── app/                 # Next.js app directory
+│   ├── layout.tsx      # Root layout with providers
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/         # React components
+│   └── ui/            # UI components (Chakra UI)
+├── theme/             # Theme configuration
+└── public/            # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization
 
-## Learn More
+1. **Update metadata** in `app/layout.tsx`
+2. **Modify theme** in `theme/theme.js`
+3. **Add pages** in the `app/` directory
+4. **Create components** in `components/`
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Chakra UI Documentation](https://www.chakra-ui.com/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+Deploy easily on [Vercel](https://vercel.com/new) or any platform that supports Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*Generated with Copilot*
